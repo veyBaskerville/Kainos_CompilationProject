@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="._6thGuidedExercise">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="95dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="monospace"
+            android:text="GE6: Checkbox and Text Color "
+            android:textAlignment="center"
+            android:textColor="#666666"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Checkboxes -->
+        <CheckBox
+            android:id="@+id/chkOne"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:text="One"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/chkTwo"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:text="Two"
+            android:textColor="@color/black" />
+
+        <!-- TextView for Result (Invisible by Default) -->
+
+        <CheckBox
+            android:id="@+id/chkThree"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="monospace"
+            android:text="Three"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/chkFour"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="3dp"
+            android:fontFamily="monospace"
+            android:text="Four"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvResultGE6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:text="Number Combination Color is GREEN"
+            android:visibility="invisible" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/btnClickGE6"
+            android:layout_width="102dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2F4156"
+            android:fontFamily="sans-serif-black"
+            android:text="Click"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

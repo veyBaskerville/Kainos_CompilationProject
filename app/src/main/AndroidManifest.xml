@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Elective1CompilationProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".BookLibraryHome"
+            android:exported="false" />
+        <activity
+            android:name="._11thGuidedExerciseResult"
+            android:exported="false" />
+
+        <activity
+            android:name="._14thGuidedExercise"
+            android:exported="false"
+            />
+
+        <activity
+            android:name="._13thGuidedExercise"
+            android:exported="false"
+            />
+        <activity
+            android:name="._12thGuidedExercise"
+            android:exported="false"
+            />
+        <receiver android:name="._12thMyCustomReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.elective1compilationproject.MY_CUSTOM_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="._12thMyReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE_CHANGED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="._11secondGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._11thGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._10thGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._9thGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._8thGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._7thGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._6thGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._5thGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._4thGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._3rdGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._2ndGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name="._1stGuidedExercise"
+            android:exported="false" />
+        <activity
+            android:name=".MP_Calculator"
+            android:exported="false" />
+        <activity
+            android:name=".MP_PayrollResult"
+            android:exported="false" />
+        <activity
+            android:name=".MP_Payroll"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false"
+            android:label="Update Book"
+            android:parentActivityName=".BookLibraryApp" />
+        <activity
+            android:name=".BookLibraryAddActivity"
+            android:exported="false"
+            android:label="Add Book"
+            android:parentActivityName=".BookLibraryApp" />
+        <activity
+            android:name=".BookLibraryApp"
+            android:exported="false"
+            android:label="Book Library" />
+        <activity
+            android:name=".MP_PayrollSQLSummary"
+            android:exported="false" />
+        <activity
+            android:name=".MP_PayrollSQL"
+            android:exported="false" />
+        <activity
+            android:name=".MP_CCJitters"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

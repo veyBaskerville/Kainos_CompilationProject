@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="._11thGuidedExercise">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="GE11: Intent"
+                android:textAlignment="center"
+                android:textColor="#666666"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Full Name -->
+            <EditText
+                android:id="@+id/etNameGE11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="monospace"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:textSize="16sp" />
+
+            <!-- Age -->
+
+            <!-- Gender -->
+            <EditText
+                android:id="@+id/etAgeGE11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="monospace"
+                android:hint="Age"
+                android:inputType="number"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="monospace"
+                android:text="Gender:"
+                android:textSize="12sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbtnMaleGE11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/rbtnFemaleGE11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <!-- Favorite Computer Subjects -->
+            <TextView
+                android:id="@+id/tv_subjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="monospace"
+                android:text="What is/are your favorite computer subject/s?"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:layout_marginBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/chkAppdetGE11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="ELECTIVE 1" />
+
+                <CheckBox
+                    android:id="@+id/chkComprog1GE11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="150dp"
+                    android:fontFamily="monospace"
+                    android:text="DISCSTRU 2" />
+
+                <CheckBox
+                    android:id="@+id/chkIntcompGE11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="SOFTENG 1" />
+
+                <CheckBox
+                    android:id="@+id/chkComprog2GE11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="150dp"
+                    android:fontFamily="monospace"
+                    android:text=" COMPROG 2" />
+            </GridLayout>
+
+            <!-- Job Preference -->
+            <TextView
+                android:id="@+id/tv_job_preference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="monospace"
+                android:text="What job do you prefer after graduation?"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnrJobGE11"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Thesis Topic -->
+            <TextView
+                android:id="@+id/tv_thesis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which do you prefer for a thesis topic/title?"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Submit Button -->
+            <ListView
+                android:id="@+id/lvThesisGE11"
+                android:layout_width="270dp"
+                android:layout_height="78dp"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="0dp" />
+
+            <Button
+                android:id="@+id/btnSubmitGE11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:backgroundTint="#2F4156"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="24dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
